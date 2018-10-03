@@ -1,4 +1,4 @@
-ripkop/<Application Name>:
+ripkop/distelli-test:
 
   #Learn about the distelli-manifest.yml at https://puppet.com/docs/pipelines-for-apps/free/manifest.html
   PkgInclude:
@@ -22,3 +22,4 @@ ripkop/<Application Name>:
 
   Exec:
     #- python simpleapp.py -p $PORT
+    - python my-main.py
