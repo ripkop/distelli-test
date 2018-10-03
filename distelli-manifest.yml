@@ -1,0 +1,24 @@
+ripkop/<Application Name>:
+
+  #Learn about the distelli-manifest.yml at https://puppet.com/docs/pipelines-for-apps/free/manifest.html
+  PkgInclude:
+    - '*'
+    #- requirements.txt
+
+  Build:
+    - echo "Begin Build"
+
+  PreInstall:
+    - echo "Begin PreInstall"
+    #- sudo apt-get -y update
+    #- sudo apt-get -y install python
+    #- sudo apt-get -y install python-pip
+    #- sudo apt-get -y install python-virtualenv
+
+  PostInstall:
+    - echo "Begin PostInstall"
+    #- virtualenv .
+    #- sudo pip install -r requirements.txt
+
+  Exec:
+    #- python simpleapp.py -p $PORT
